@@ -1,7 +1,10 @@
 # ACL Festival Ticket Analysis
 
-## Motivation
 
+
+
+
+## Motivation
 As a first-time ACL festival attendee, I wondered when the best time to buy tickets would be. Is it smarter to buy a week before the festival, or hours before the gates open? I turned to Python to find the hidden treasures in 2021 ticket price data.
 
 ## Methodology
@@ -9,6 +12,21 @@ For this project, I used StubHub’s APIs to request ticket information for the 
 
 ## Requirements
 - [StubHub developer account](https://developer.stubhub.com/getting-started)
+
+## Main Highlights
+
+| Boxplot comparison shows ticket price variance across ticket types               | 
+| ----------- | 
+|<img src="plots/boxplot.png" width="700" height="400" />                   
+
+| 3-day minimum ticket price over time [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tatianabarbone/ticket-prices/blob/main/ACL_3day.ipynb) | FRIDAY ONLY minimum ticket price over time [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tatianabarbone/ticket-prices/blob/main/ACL_friday_only.ipynb)|
+| ----------- | ----------- |
+|<img src="plots/3day_lineplot.png"/>     | <img src="plots/friday_lineplot.png" /> |
+
+
+| SATURDAY ONLY minimum ticket price over time [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tatianabarbone/ticket-prices/blob/main/ACL_saturday_only.ipynb) | SUNDAY ONLY minimum ticket price over time [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tatianabarbone/ticket-prices/blob/main/ACL_sunday_only.ipynb)|
+| ----------- | ----------- |
+|<img src="plots/saturday_lineplot.png" />     | <img src="plots/sunday_lineplot.png" /> |
 
 ## Notes
 - The ticket prices exclude fees, which could be up to 30% of the selling price, which fluctuate based on demand. For example, a $200 ticket could be up to $260 after fees.
